@@ -1,0 +1,15 @@
+version: '3.4'
+services:
+    ubuntu:
+        image: ubuntu:latest
+        stdin_open: true # docker run -i
+        tty: true        # docker run -t
+        container_name: ubuntu
+        command: bash -c "apt-get update && apt-get upgrade && apt-get install -y python"
+    centos7:
+        image: centos:centos7
+        stdin_open: true # docker run -i
+        tty: true        # docker run -t
+        container_name: centos7
+
+
