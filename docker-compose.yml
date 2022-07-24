@@ -5,8 +5,7 @@ services:
         stdin_open: true # docker run -i
         tty: true        # docker run -t
         container_name: ubuntu
-        command: bash -c "apt-get update && apt-get upgrade -y && apt-get install -y build-essential python3"
-        command: bash
+        command: bash -c "apt-get update && apt-get upgrade -y && apt-get install -y build-essential python3 && bash"
     centos7:
         image: centos:centos7
         stdin_open: true # docker run -i
